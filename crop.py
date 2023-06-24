@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn
+
+sklearn_version = sklearn.__version__.split('.')
+if int(sklearn_version[0]) < 0 or (int(sklearn_version[0]) == 0 and int(sklearn_version[1]) < 24):
+    raise ImportError("The scikit-learn version is incompatible. Please upgrade to scikit-learn 0.24 or later.")
+
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 
