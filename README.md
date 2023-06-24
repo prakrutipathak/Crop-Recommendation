@@ -11,3 +11,5 @@ The kNN algorithm was chosen for this project because it is a simple and effecti
 # Results
 The model achieved an accuracy of 97% on the test set, which indicates that it can make reliable crop recommendations based on the input parameters.
 
+ 
+
